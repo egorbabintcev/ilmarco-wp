@@ -1,0 +1,111 @@
+:root {
+  --main-font: 'Kontora', sans-serif;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('#{$font-path}/Kontora-Light.eot');
+  src: url('#{$font-path}/Kontora-Light.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Kontora-Light.woff2') format('woff2'),
+      url('#{$font-path}/Kontora-Light.woff') format('woff'),
+      url('#{$font-path}/Kontora-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('#{$font-path}/Kontora-SemiBold.eot');
+  src: url('#{$font-path}/Kontora-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Kontora-SemiBold.woff2') format('woff2'),
+      url('#{$font-path}/Kontora-SemiBold.woff') format('woff'),
+      url('#{$font-path}/Kontora-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('#{$font-path}/Kontora-Medium.eot');
+  src: url('#{$font-path}/Kontora-Medium.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Kontora-Medium.woff2') format('woff2'),
+      url('#{$font-path}/Kontora-Medium.woff') format('woff'),
+      url('#{$font-path}/Kontora-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('#{$font-path}/Kontora-ExtraBold.eot');
+  src: url('#{$font-path}/Kontora-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Kontora-ExtraBold.woff2') format('woff2'),
+      url('#{$font-path}/Kontora-ExtraBold.woff') format('woff'),
+      url('#{$font-path}/Kontora-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('#{$font-path}/Kontora-Black.eot');
+  src: url('#{$font-path}/Kontora-Black.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Kontora-Black.woff2') format('woff2'),
+      url('#{$font-path}/Kontora-Black.woff') format('woff'),
+      url('#{$font-path}/Kontora-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('#{$font-path}/Kontora-Regular.eot');
+  src: url('#{$font-path}/Kontora-Regular.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Kontora-Regular.woff2') format('woff2'),
+      url('#{$font-path}/Kontora-Regular.woff') format('woff'),
+      url('#{$font-path}/Kontora-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('#{$font-path}/Kontora-Bold.eot');
+  src: url('#{$font-path}/Kontora-Bold.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Kontora-Bold.woff2') format('woff2'),
+      url('#{$font-path}/Kontora-Bold.woff') format('woff'),
+      url('#{$font-path}/Kontora-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('#{$font-path}/Kontora-Thin.eot');
+  src: url('#{$font-path}/Kontora-Thin.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Kontora-Thin.woff2') format('woff2'),
+      url('#{$font-path}/Kontora-Thin.woff') format('woff'),
+      url('#{$font-path}/Kontora-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('#{$font-path}/Kontora-ExtraBlack.eot');
+  src: url('#{$font-path}/Kontora-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/Kontora-ExtraBlack.woff2') format('woff2'),
+      url('#{$font-path}/Kontora-ExtraBlack.woff') format('woff'),
+      url('#{$font-path}/Kontora-ExtraBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

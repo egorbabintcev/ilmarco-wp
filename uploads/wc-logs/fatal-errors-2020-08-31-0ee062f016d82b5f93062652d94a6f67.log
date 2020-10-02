@@ -1,0 +1,216 @@
+2020-08-31T05:50:22+00:00 CRITICAL syntax error, unexpected end of file in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 586
+
+2020-08-31T10:20:02+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:17
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 17
+
+2020-08-31T10:20:04+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:17
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 17
+
+2020-08-31T10:21:05+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:17
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 17
+
+2020-08-31T10:21:10+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:17
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 17
+
+2020-08-31T10:22:26+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_price() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:18
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 18
+
+2020-08-31T10:39:07+00:00 CRITICAL syntax error, unexpected '$loop' (T_VARIABLE) in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 77
+
+2020-08-31T10:39:30+00:00 CRITICAL syntax error, unexpected '$loop' (T_VARIABLE) in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 77
+
+2020-08-31T10:39:31+00:00 CRITICAL syntax error, unexpected '$loop' (T_VARIABLE) in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 77
+
+2020-08-31T10:40:06+00:00 CRITICAL syntax error, unexpected '$loop' (T_VARIABLE) in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 77
+
+2020-08-31T10:40:24+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:77
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 77
+
+2020-08-31T10:40:55+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:77
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 77
+
+2020-08-31T10:41:30+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:76
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 76
+
+2020-08-31T10:41:58+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:76
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 76
+
+2020-08-31T10:43:18+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:76
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 76
+
+2020-08-31T10:43:41+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:76
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 76
+
+2020-08-31T10:45:38+00:00 CRITICAL syntax error, unexpected 'wp_reset_postdata' (T_STRING), expecting ';' or ',' in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 79
+
+2020-08-31T10:45:39+00:00 CRITICAL syntax error, unexpected 'wp_reset_postdata' (T_STRING), expecting ';' or ',' in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 79
+
+2020-08-31T10:45:46+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:74
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 74
+
+2020-08-31T10:46:16+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:11
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 11
+
+2020-08-31T10:46:37+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:11
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 11
+
+2020-08-31T10:47:41+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:11
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 11
+
+2020-08-31T10:47:49+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:11
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 11
+
+2020-08-31T10:48:27+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:11
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 11
+
+2020-08-31T10:48:51+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:11
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 11
+
+2020-08-31T10:49:08+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:11
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 11
+
+2020-08-31T11:02:28+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:11
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 11
+
+2020-08-31T11:04:30+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:566
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 566
+
+2020-08-31T11:04:38+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:566
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 566
+
+2020-08-31T12:15:59+00:00 CRITICAL Uncaught Error: Call to a member function get_totals() on array in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:14
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 14
+
+2020-08-31T12:18:32+00:00 CRITICAL syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 15
+
+2020-08-31T12:19:04+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:15
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 15
+
+2020-08-31T12:22:01+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php:17
+Stack trace:
+#0 /var/www/ilMarco.local/www/wp-includes/template-loader.php(106): include()
+#1 /var/www/ilMarco.local/www/wp-blog-header.php(19): require_once('/var/www/ilMarc...')
+#2 /var/www/ilMarco.local/www/index.php(17): require('/var/www/ilMarc...')
+#3 {main}
+  thrown in /var/www/ilMarco.local/www/wp-content/themes/ilMarco/index.php on line 17
+
