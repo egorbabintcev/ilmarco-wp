@@ -122,8 +122,6 @@
   }
 
   &-cart {
-    // z-index: 11;
-
     @include media('>sm') {
       padding-bottom: rem(20);
       position: relative;
@@ -145,10 +143,10 @@
     }
 
     @include media('<=sm') {
-      display: none;
       position: fixed;
-      top: 20vh;
+      bottom: 10vh;
       right: rem(25);
+      z-index: 10;
     }
 
     &__btn {
@@ -520,6 +518,20 @@
 
       path {
         stroke: var(--color-white);
+      }
+    }
+  }
+
+  &_column-direction {
+    @include media('<=sm') {
+      padding-top: rem(30);
+
+      .container {
+        flex-direction: column;
+      }
+
+      .header-logo {
+        margin-bottom: rem(20);
       }
     }
   }

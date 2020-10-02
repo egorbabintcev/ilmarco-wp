@@ -47,8 +47,9 @@ gulp.task('pages', () => {
 
 gulp.task('server', () => {
   browserSync.init({
-    proxy: 'localhost',
+    proxy: 'https://ilmarco.local',
     online: false,
+    https: true,
   })
 });
 

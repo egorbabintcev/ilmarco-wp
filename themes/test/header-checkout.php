@@ -31,7 +31,7 @@
 <body <?php body_class('cart-page'); ?>>
 <?php wp_body_open(); ?>
 
-<header class="header">
+<header class="header header_column-direction">
     <div class="container">
         <a class="header-logo" href="/">
             <img class="header-logo__img" src="<?= get_template_directory_uri(); ?>/assets/img/company-logo.png" alt="" />

@@ -2,6 +2,41 @@
 Start Mini Cart Wrapper
 ================================*/
 
+table.shop_table_responsive tr td:not(.product-thumbnail)::before {
+  margin-right: 1rem;
+}
+
+.woocommerce-mini-cart__total {
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+}
+
+.woocommerce-mini-cart__total strong {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.minicart-btn-group > a:first-of-type {
+  background-color: var(--color-yellow);
+  box-shadow: 0px 25px 60px 0px rgba(199, 156, 32, 0.25),inset 0px 2px 10px 0px rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  color: var(--color-dark-grey);
+  font-size: rem(16);
+  font-weight: 900;
+  line-height: 60px;
+  max-height: 60px;
+  max-width: 250px;
+  min-height: 60px;
+  min-width: 250px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.minicart-btn-group > a:last-of-type {
+  display: none;
+}
+
 .wrap {
   display: flex;
   align-items: center;

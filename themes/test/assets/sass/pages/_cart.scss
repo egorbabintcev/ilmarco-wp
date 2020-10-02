@@ -1,6 +1,11 @@
 .cart {
   padding: rem(80) 0 rem(120);
 
+  @include media('<=sm') {
+    padding: rem(80) 0;
+    text-align: center;
+  }
+
   &-step {
     display: flex;
     flex-direction: column;
@@ -34,6 +39,10 @@
     .col {
       align-items: center;
       display: flex;
+
+      @include media('<=sm') {
+        text-align: left;
+      }
     }
 
     &__img {
@@ -127,6 +136,13 @@
       max-width: rem(20);
       min-height: rem(20);
       min-width: rem(20);
+
+      @include media('<=sm') {
+        max-height: rem(40);
+        max-width: rem(40);
+        min-height: rem(40);
+        min-width: rem(40);
+      }
     }
   }
 
@@ -259,6 +275,11 @@
       min-height: rem(70);
       padding: 0 rem(30);
 
+      @include media('<=sm') {
+        margin-bottom: rem(15);
+        min-width: 80%;
+      }
+
       &:focus {
         outline: none;
       }
@@ -276,12 +297,21 @@
       min-height: rem(70);
       padding: 0 rem(55);
       text-transform: uppercase;
+
+      @include media('<=sm') {
+        min-width: 80%;
+      }
     }
   }
 
   &-btns {
     display: flex;
     justify-content: space-between;
+
+    @include media('<=sm') {
+      align-items: center;
+      flex-direction: column;
+    }
 
     &__btn {
       align-items: center;
@@ -294,6 +324,14 @@
       min-height: rem(70);
       padding: 0 rem(50);
       text-transform: uppercase;
+
+      @include media('<=sm') {
+        min-width: 80%;
+
+        &:not(:last-child) {
+          margin-bottom: rem(10);
+        }
+      }
     }
   }
 
@@ -486,6 +524,10 @@
     margin-bottom: rem(35);
     text-align: right;
 
+    @include media('<=sm') {
+      text-align: center;
+    }
+
     .count {
       color: var(--color-yellow);
       font: {
@@ -585,5 +627,45 @@
         font-size: rem(12);
       }
     }
+  }
+}
+
+.coupon {
+  margin-top: rem(50);
+
+  @include media('<=sm') {
+    margin-bottom: rem(30);
+    text-align: center;
+  }
+}
+
+.wc-proceed-to-checkout {
+  @include media('<=sm') {
+    width: 100%;
+  }
+}
+
+.woocommerce-cart-form tr.cart-item {
+  font-size: rem(22);
+
+  @include media('<=sm') {
+    display: grid;
+    grid-gap: rem(20);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+  }
+}
+
+.product {
+  &-thumbnail {
+    grid-column: span 2;
+  }
+
+  &-quantity {
+    grid-column: span 2;
+  }
+
+  &-remove {
+    justify-self: end;
   }
 }

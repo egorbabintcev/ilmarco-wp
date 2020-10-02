@@ -303,8 +303,10 @@ $('.cart__btn-next').on('click', function () {
 
 
 $('.header-cart__btn').on('click', function (e) {
-    e.preventDefault();
-    $('.modal-minicart').toggleClass('open');
+    if (window.matchMedia('(min-width: 481px)').matches) {
+      e.preventDefault();
+      $('.modal-minicart').toggleClass('open');
+    }
 });
 
 $('.mfp-close').on('click', function () {

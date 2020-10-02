@@ -140,7 +140,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								?>
                             </td>
 
-                            <td class="product-subtotal col" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
+                            <td class="product-subtotal   col" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
                                 <!-- total price -->
                                 <span class="cart-item__price">
                                         <span class="price"><?php echo WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ) ?></span>
@@ -197,10 +197,12 @@ do_action( 'woocommerce_before_cart' ); ?>
                                 <h2 class="cart__subtitle">Промокод</h2>
 
                                 <!--                                <label for="coupon_code">--><?php //esc_html_e( 'Coupon:', 'woocommerce' ); ?><!--</label>-->
-                                <input type="text" name="coupon_code" class="input-text cart-promocode__input" id="coupon_code" value=""
-                                        placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>"/>
-                                <button type="submit" class="button cart-promocode__btn" name="apply_coupon"
-                                        value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?></button>
+                                <div class="coupon-fields">
+                                  <input type="text" name="coupon_code" class="input-text cart-promocode__input" id="coupon_code" value=""
+                                          placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>"/>
+                                  <button type="submit" class="button cart-promocode__btn" name="apply_coupon"
+                                          value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?></button>
+                                </div>
 								<?php do_action( 'woocommerce_cart_coupon' ); ?>
                             </div>
 						<?php } ?>

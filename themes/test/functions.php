@@ -171,7 +171,7 @@ function test_scripts() {
 
 
 //	wp_enqueue_script( 'slick-slider', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js', array( 'jquery' ), '', true );
-	wp_enqueue_script( 'slick-slider', get_template_directory_uri() . './assets/js/slick.js', array( 'jquery' ), '2020', true );
+	wp_enqueue_script( 'slick-slider', get_template_directory_uri() . '/assets/js/slick.js', array( 'jquery' ), '2020', true );
 
 
 
@@ -248,15 +248,24 @@ function wc_mini_cart_refresh_number( $fragments ) {
 	?>
 
 	<div class="wrap d-flex">
-		<?php if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
-			<div class="separator"></div>
-			<svg class="header-cart__icon">
-				<use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#cart"></use>
-			</svg>
-			<span class="header-cart__count">
-             <?php echo WC()->cart->get_cart_contents_count(); ?>
-            </span>
-		<?php } ?>
+    <?php if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
+    <div class="separator"></div>
+    <svg class="header-cart__icon">
+      <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#cart"></use>
+    </svg>
+    <span class="header-cart__count">
+          <?php echo WC()->cart->get_cart_contents_count(); ?>
+          </span>
+    <?php } elseif ( WC()->cart->get_cart_contents_count() == 0 ) { ?>
+    <div class="separator"></div>
+    <svg class="header-cart__icon">
+      <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#cart"></use>
+    </svg>
+    <span class="header-cart__count">
+          <?php // echo WC()->cart->get_cart_contents_count(); ?>
+          0
+          </span>
+    <?php } ?>
 	</div>
 
 	<?php

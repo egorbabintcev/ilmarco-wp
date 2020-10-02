@@ -295,20 +295,26 @@
             <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="header-cart__btn">
                 <span class="header-cart__text">Корзина</span>
                 <div class="wrap">
-				    <?php if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
-                        <div class="separator"></div>
-                        <svg class="header-cart__icon">
-                            <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#cart"></use>
-                        </svg>
-                        <span class="header-cart__count">
-                         <?php echo WC()->cart->get_cart_contents_count(); ?>
+                <?php if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
+                  <div class="separator"></div>
+                  <svg class="header-cart__icon">
+                    <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#cart"></use>
+                  </svg>
+                  <span class="header-cart__count">
+                        <?php echo WC()->cart->get_cart_contents_count(); ?>
                         </span>
-				    <?php } ?>
+                <?php } elseif ( WC()->cart->get_cart_contents_count() == 0 ) { ?>
+                  <div class="separator"></div>
+                  <svg class="header-cart__icon">
+                    <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#cart"></use>
+                  </svg>
+                  <span class="header-cart__count">
+                        <?php // echo WC()->cart->get_cart_contents_count(); ?>
+                        0
+                        </span>
+                <?php } ?>
                 </div>
             </a>
-            <div class="mini-cart">
-              <?php woocommerce_mini_cart(); ?>
-            </div>
         </div>
     </div>
   </header>
