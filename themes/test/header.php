@@ -62,12 +62,12 @@
           </div>
         </div>
         <div class="header-about__promises">
-          <span class="header-about__time">42 мин</span>
+          <span class="header-about__time">45 мин</span>
           <div class="header-about__popup">
             <i class="header-about__popup-dot"></i>
             <div class="header-about__popup-window">
               <div class="col">
-                <p class="title">42 минуты</p>
+                <p class="title">45 минуты</p>
                 <p class="subtitle subtitle_semi-transparent">Среднее время доставки</p>
                 <!-- <p class="subtitle subtitle_semi-transparent">
                   Если не успеем за 60 минут,</br>

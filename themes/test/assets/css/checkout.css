@@ -21,9 +21,6 @@ Start Checkout Page Wrapper
 .checkout-page-coupon-area .card, .checkout-page-account-area .card {
     border: none;
     padding: 0; }
-.checkout-page-coupon-area .card a{
-
-}
 .checkout-page-coupon-area .card h3, .checkout-page-account-area .card h3 {
     background-color: #eeeff2;
     font-size: 1.3rem;

@@ -24,10 +24,10 @@ get_header();
           <p class="benefits-item__text">Только натуральные итальянские ингредиенты</p>
         </div>
         <div class="benefits-item"><img class="benefits-item__img" src="<?= get_template_directory_uri(); ?>/assets/img/benefits-pizzabox.png" alt="" />
-          <p class="benefits-item__text">Доставим до вашей двери за 35 минут</p>
+          <p class="benefits-item__text">Быстрая доставка до вашей двери</p>
         </div>
         <div class="benefits-item"><img class="benefits-item__img" src="<?= get_template_directory_uri(); ?>/assets/img/benefits-pizza.png" alt="" />
-          <p class="benefits-item__text">Будет надолго приятное насыщение</p>
+          <p class="benefits-item__text">Уникальная рецептура</p>
         </div>
       </div>
       <div class="content">
@@ -37,7 +37,7 @@ get_header();
         <small class="content__small">
           <?= get_field('main_subtitle', 'options') ?>
         </small>
-        <a class="content__btn" href="#catalog">Подобрать пиццу для себя</a>
+        <a class="content__btn" href="#catalog">Выбрать пиццу</a>
       </div>
       <a href="#catalog" class="offer-arrow">
         <svg class="offer-arrow">
@@ -325,14 +325,13 @@ get_header();
       <h2 class="advantages__title"><?= get_field('technology_title', 'options'); ?></h2>
       <div class="advantages-cards">
         <div class="item">
-          <h3 class="item__title">Пицца легко откусывается и жуётся как обычный хлеб</h3>
+          <h3 class="item__title">Созревание теста более 24 часов</h3>
           <p class="item__subtitle">Тесто выдерживается более 24 часов для созвервани, что делает его
             более легким и полезным</p><img class="item__img" src="<?= get_template_directory_uri(); ?>/assets/img/advantage-dough.png" />
         </div>
         <div class="item item_reversed">
-          <h3 class="item__title">Сохраняется хруст и мягкость при приготовлении</h3>
-          <p class="item__subtitle">Пицца выпекается в итальянской печи при температуре 450 градусов в
-            течение 90-120 секунд</p><img class="item__img" src="<?= get_template_directory_uri(); ?>/assets/img/advantage-oven.png" />
+          <h3 class="item__title">Выпекается в печи при температуре более 400 градусов</h3>
+          <p class="item__subtitle">Пицца сохраняется хруст и мягкость при приготовлении </p><img class="item__img" src="<?= get_template_directory_uri(); ?>/assets/img/advantage-oven.png" />
         </div>
         <div class="item">
           <h3 class="item__title">Готовится профессиональным пиццайоло</h3>
@@ -376,16 +375,18 @@ get_header();
           <div class="conditions-item">
             <div class="conditions-item__img"><img src="<?= get_template_directory_uri(); ?>/assets/img/conditions-item-mozzarella.png" /><span>04</span>
             </div>
-            <h3 class="conditions-item__text"><strong>Моцарелла Fior di Latte</strong><br />которая
-              тянется и не сгорает
-              <br />при высокой температуре
+            <h3 class="conditions-item__text"><strong>Натуральная моцарелла с ферментами Mauro Casalli
+</strong><br />• Без глютена
+              <br />• Без ГМО
+			  <br />• Без пальмового масла
+			  <br />• Без лимонной кислоты
               <br /><small>(срок хранения всего 7 суток)</small>
             </h3>
           </div>
           <div class="conditions-item">
             <div class="conditions-item__img"><img src="<?= get_template_directory_uri(); ?>/assets/img/conditions-item-olive.png" /><span>05</span>
             </div>
-            <h3 class="conditions-item__text"><strong>Масло оливковое</strong><br />Полностью усваивается
+            <h3 class="conditions-item__text"><strong>Оливковое масло </strong><br />Полностью усваивается
               <br />организмом и помогает
               <br />регулировать уровень холестерина
             </h3>
@@ -476,7 +477,7 @@ get_header();
             <br />свежесть, мы
             <strong>
               доставляем пиццу только
-              <br />в радиусе 5-7 км от пиццерии</strong>
+              <br />в радиусе 4-5 км от пиццерии</strong>
           </p>
         </div>
         <div class="delievery__feature">
@@ -486,7 +487,7 @@ get_header();
           <p class="delievery__feature-text">
             Принимаем и доставляем
             <br />заказы
-            <strong>с 11:00 до 22:30</strong>
+            <strong>в рабочее время ресторана</strong>
           </p>
         </div>
         <a class="delievery__btn" href="#map">посмотреть зону доставки</a>
@@ -563,7 +564,7 @@ get_header();
           <span>Химки</span>
         </label>
         <label class="contacts-switch__knob">
-          <input type="radio" name="location" data-map="https://yandex.ru/map-widget/v1/?um=constructor%3A869bf185546c3c6b2c8292c6f4da5482067e050754aa3d2411577226a1d20e7b&amp;source=constructor" data-address="ул. Доватора, 11, корп. 1, Москва" />
+          <input type="radio" name="location" data-map="https://yandex.ru/map-widget/v1/?um=constructor%3A869bf185546c3c6b2c8292c6f4da5482067e050754aa3d2411577226a1d20e7b&amp;source=constructor" data-address="г. Москва ул. Льва Толстого, 23к7с3" />
           <span>Хамовники</span>
         </label>
       </div>

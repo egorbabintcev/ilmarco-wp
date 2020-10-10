@@ -153,6 +153,7 @@ $('.modal-close').on('click', function () {
     $('body').removeClass('is-lock');
 })
 
+/*
 $('.food-card__btn').on('click', function (e) {
     e.preventDefault();
     const order = $(this).closest('.food-card').find('.food-card__title').text();
@@ -160,6 +161,7 @@ $('.food-card__btn').on('click', function (e) {
     $('.modal.modal-callback').fadeIn();
     // $('body').addClass('is-lock');
 })
+*/
 
 $('.header-about__switch').on('click', function(e) {
   const links = $(this)
@@ -186,6 +188,22 @@ $('.mobile-nav a[href*="#"]').on('click', function(e) {
     .removeClass('is-active')
   $('body')
     .removeClass('is-lock')
+})
+
+$('.footer-contact__btn').on('click', function(e) {
+  e.preventDefault();
+  $('.modal-callback')
+    .fadeIn()
+  $('body')
+    .addClass('is-lock')
+})
+
+$('.footer-further__policy').on('click', function(e) {
+  e.preventDefault();
+  $('.modal-privacy')
+    .fadeIn()
+  $('body')
+    .addClass('is-lock')
 })
 
 // setup tel input

@@ -186,6 +186,13 @@ function test_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'test_scripts' );
 
+acf_add_options_page( array(
+    'page_title' => 'Экраны',
+    'menu_title' => 'Экраны',
+    'menu_slug' => 'screens-content',
+    'capability' => 'edit_posts',
+) );
+
 /**
  * Implement the Custom Header feature.
  */
