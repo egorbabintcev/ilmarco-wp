@@ -2,6 +2,14 @@
 Start Checkout Page Wrapper
 ================================*/
 
+.product-thumbnail {
+  min-width: 320px;
+}
+
+td.product-subtotal {
+  min-width: 190px;
+}
+
 .woocommerce-billing-fields h3 {
   font-size: 2.4rem;
   font-weight: 700;

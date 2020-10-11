@@ -23,8 +23,8 @@ jQuery(document).ready(function ($) {
         dotsClass: 'slider-dots',
         draggable: true,
         slidesToShow: 1,
-        prevArrow: '<button class="slider-btn prev"><svg><use xlink:href="/wp-content/themes/ilMarco/assets/img/icons-sprite.svg#arrow-left"></use></svg></button>',
-        nextArrow: '<button class="slider-btn next"><svg><use xlink:href="/wp-content/themes/ilMarco/assets/img/icons-sprite.svg#arrow-right"></use></svg></button>',
+        prevArrow: '<button class="slider-btn prev"><svg><use xlink:href="/wp-content/themes/IlMarco/assets/img/icons-sprite.svg#arrow-left"></use></svg></button>',
+        nextArrow: '<button class="slider-btn next"><svg><use xlink:href="/wp-content/themes/IlMarco/assets/img/icons-sprite.svg#arrow-right"></use></svg></button>',
         responsive: [
             {
                 breakpoint: 2560,
@@ -52,8 +52,8 @@ jQuery(document).ready(function ($) {
         dots: true,
         dotsClass: 'slider-dots',
         draggable: true,
-        prevArrow: '<button class="slider-btn prev"><svg><use xlink:href="/wp-content/themes/ilmarko/assets/img/icons-sprite.svg#arrow-left"></use></svg></button>',
-        nextArrow: '<button class="slider-btn next"><svg><use xlink:href="/wp-content/themes/ilmarko/assets/img/icons-sprite.svg#arrow-right"></use></svg></button>',
+        prevArrow: '<button class="slider-btn prev"><svg><use xlink:href="/wp-content/themes/IlMarco/assets/img/icons-sprite.svg#arrow-left"></use></svg></button>',
+        nextArrow: '<button class="slider-btn next"><svg><use xlink:href="/wp-content/themes/IlMarco/assets/img/icons-sprite.svg#arrow-right"></use></svg></button>',
         slidesToShow: 3,
         responsive: [
             {
@@ -121,7 +121,11 @@ $('.catalog input[type="radio"]').on('click', function () {
 
 // setup maps switch
 $('.contacts input[type="radio"]').on('change', function () {
-    const {map, address} = this.dataset;
+    const clearPhone = (phone) => {
+      return phone.toString().replace(/[^+\d]+/g, '');
+    }
+
+    const {map, address, tel, time} = this.dataset;
     $(this)
         .closest('.contacts')
         .find('.address')
@@ -129,13 +133,23 @@ $('.contacts input[type="radio"]').on('change', function () {
     $(this)
         .closest('.contacts')
         .find('iframe')
-        .prop('src', map);
+        .prop('src', map)
+    $(this)
+        .closest('.contacts')
+        .find('.tel')
+        .text(tel)
+        .prop('href', `tel:${clearPhone(tel)}`)
+
+    $(this)
+        .closest('.contacts')
+        .find('.worktime')
+        .text(time)
 })
 
 // setup scroll to category
 
 if ($('.catalog-radio').length !== 0) {
-  const catalogRadioPos = $('.catalog-menu').offset().top;
+  const catalogRadioPos = $('.catalog').offset().top;
   $(window).on('scroll', function () {
     if ($(this).scrollTop() > catalogRadioPos) {
       $('.catalog-menu').addClass('is-fixed');
@@ -153,15 +167,12 @@ $('.modal-close').on('click', function () {
     $('body').removeClass('is-lock');
 })
 
-/*
+
 $('.food-card__btn').on('click', function (e) {
-    e.preventDefault();
-    const order = $(this).closest('.food-card').find('.food-card__title').text();
-    $('.modal input[name="order"]').prop('value', order);
-    $('.modal.modal-callback').fadeIn();
-    // $('body').addClass('is-lock');
+  if (!$('.catalog-menu').hasClass('is-fixed')) {
+    $('html, body').animate({scrollTop: $('.catalog').offset().top + 10}, 150);
+  }
 })
-*/
 
 $('.header-about__switch').on('click', function(e) {
   const links = $(this)
@@ -190,6 +201,7 @@ $('.mobile-nav a[href*="#"]').on('click', function(e) {
     .removeClass('is-lock')
 })
 
+/*
 $('.footer-contact__btn').on('click', function(e) {
   e.preventDefault();
   $('.modal-callback')
@@ -197,6 +209,7 @@ $('.footer-contact__btn').on('click', function(e) {
   $('body')
     .addClass('is-lock')
 })
+*/
 
 $('.footer-further__policy').on('click', function(e) {
   e.preventDefault();

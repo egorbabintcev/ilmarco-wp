@@ -560,11 +560,11 @@ get_header();
       <h2 class="contacts__title"><?= get_field('contacts_title', 'options'); ?></h2>
       <div class="contacts-switch">
         <label class="contacts-switch__knob">
-          <input type="radio" name="location" checked="checked" data-map="https://yandex.ru/map-widget/v1/?um=constructor%3A2c77f3705cfd06a9a0f0ec2bf96419774c378c0a435a260ab686838fe3c322b7&amp;amp;source=constructor" data-address="Москва, ул. Правобережная 1Б, ТЦ «Капитолий», 2 этаж, балкон" />
+          <input type="radio" name="location" checked="checked" data-map="https://yandex.ru/map-widget/v1/?um=constructor%3A2c77f3705cfd06a9a0f0ec2bf96419774c378c0a435a260ab686838fe3c322b7&amp;amp;source=constructor" data-address="Москва, ул. Правобережная 1Б, ТЦ «Капитолий», 2 этаж, балкон" data-tel="+7 (499) 501-57-71" data-time="Пн-Вс: с 10:00 до 22:00" />
           <span>Химки</span>
         </label>
         <label class="contacts-switch__knob">
-          <input type="radio" name="location" data-map="https://yandex.ru/map-widget/v1/?um=constructor%3A869bf185546c3c6b2c8292c6f4da5482067e050754aa3d2411577226a1d20e7b&amp;source=constructor" data-address="г. Москва ул. Льва Толстого, 23к7с3" />
+          <input type="radio" name="location" data-map="https://yandex.ru/map-widget/v1/?um=constructor%3A869bf185546c3c6b2c8292c6f4da5482067e050754aa3d2411577226a1d20e7b&amp;source=constructor" data-address="г. Москва ул. Льва Толстого, 23к7с3" data-tel="+7 (495) 500-86-12" data-time="Пн-Вс: с 11:00 до 22:00" />
           <span>Хамовники</span>
         </label>
       </div>
@@ -573,10 +573,10 @@ get_header();
       <iframe id="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c77f3705cfd06a9a0f0ec2bf96419774c378c0a435a260ab686838fe3c322b7&amp;amp;source=constructor" frameborder="0"></iframe>
       <div class="contacts-info">
         <div class="contacts-info__group">
-          <p class="contacts-info__title">Телефон:</p><a class="contacts-info__subtitle" href="tel:<?= clerphone(get_field('tel', 'options')); ?>"><?= get_field('tel', 'options'); ?></a>
+          <p class="contacts-info__title">Телефон:</p><a class="contacts-info__subtitle tel" href="tel:<?= clerphone(get_field('tel', 'options')); ?>"><?= get_field('tel', 'options'); ?></a>
         </div>
         <div class="contacts-info__group">
-          <p class="contacts-info__title">WhatsApp | Viber | Telegram | Вконтакте</p><a class="contacts-info__subtitle" href="tel:<?= clerphone(get_field('tel', 'options')); ?>"><?= get_field('tel', 'options'); ?></a>
+          <p class="contacts-info__title">WhatsApp | Viber | Telegram | Вконтакте</p><a class="contacts-info__subtitle tel" href="tel:<?= clerphone(get_field('tel', 'options')); ?>"><?= get_field('tel', 'options'); ?></a>
           <div class="contacts-info__btns"><a class="contacts-info__social-btn whatsapp">
               <svg>
                 <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#whatsapp"></use>
@@ -605,7 +605,7 @@ get_header();
         </div>
         <div class="contacts-info__group">
           <p class="contacts-info__title">Режим работы:</p>
-          <p class="contacts-info__subtitle">Пн-Вс: с 10:00 до 22:00</p>
+          <p class="contacts-info__subtitle worktime">Пн-Вс: с 10:00 до 22:00</p>
         </div>
         <a class="contacts-info__btn">Посмотреть зону доставки</a>
       </div>
