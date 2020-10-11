@@ -24,7 +24,7 @@
           <br />на нас в соцсетях:
         </p>
         <div class="footer-social__btn-group">
-          <a class="footer-social__btn instagram">
+          <a class="footer-social__btn instagram" target="_blank" href="https://www.instagram.com/ilmarcopizza/">
             <svg>
               <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#instagram"></use>
             </svg>

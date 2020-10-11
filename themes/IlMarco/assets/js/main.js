@@ -139,7 +139,10 @@ $('.contacts input[type="radio"]').on('change', function () {
         .find('.tel')
         .text(tel)
         .prop('href', `tel:${clearPhone(tel)}`)
-
+    $(this)
+        .closest('.contacts')
+        .find('.whatsapp')
+        .prop('href', `https://wa.me/${clearPhone(tel).replace(/\+/g, '')}`)
     $(this)
         .closest('.contacts')
         .find('.worktime')

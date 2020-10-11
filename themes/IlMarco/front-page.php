@@ -577,11 +577,12 @@ get_header();
         </div>
         <div class="contacts-info__group">
           <p class="contacts-info__title">WhatsApp | Viber | Telegram | Вконтакте</p><a class="contacts-info__subtitle tel" href="tel:<?= clerphone(get_field('tel', 'options')); ?>"><?= get_field('tel', 'options'); ?></a>
-          <div class="contacts-info__btns"><a class="contacts-info__social-btn whatsapp">
+          <div class="contacts-info__btns"><a class="contacts-info__social-btn whatsapp" href="https://wa.me/74995015771">
               <svg>
                 <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#whatsapp"></use>
               </svg>
-            </a><a class="contacts-info__social-btn viber">
+            </a>
+            <!-- <a class="contacts-info__social-btn viber">
               <svg>
                 <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#viber"></use>
               </svg>
@@ -593,7 +594,9 @@ get_header();
               <svg>
                 <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#vk"></use>
               </svg>
-            </a></div>
+            </a>
+            -->
+          </div>
         </div>
         <div class="contacts-info__group">
           <p class="contacts-info__title">Почта для связи:</p><a class="contacts-info__subtitle mail" href="mailto:<?= get_field('email', 'options'); ?>"><?= get_field('email', 'options'); ?></a>
