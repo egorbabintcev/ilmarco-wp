@@ -69,7 +69,7 @@ img.attachment-woocommerce_thumbnail {
 
     transition: all .8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
-    z-index: 9; }
+    z-index: 11; }
 
 @media screen and (max-width: 481px) {
   .modal-minicart {
