@@ -167,6 +167,10 @@
         border-radius: 50%;
         padding: rem(20);
         position: relative;
+
+        &.is-empty {
+          visibility: hidden;
+        }
       }
 
       &:hover {

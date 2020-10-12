@@ -254,29 +254,21 @@ function wc_mini_cart_refresh_number( $fragments ) {
 	ob_start();
 	?>
 
-	<div class="wrap d-flex">
-    <?php if ( ! WC()->cart->get_cart_contents_count() == 0 ) { ?>
-    <div class="separator"></div>
-    <svg class="header-cart__icon">
-      <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#cart"></use>
-    </svg>
-    <span class="header-cart__count">
-          <?php echo WC()->cart->get_cart_contents_count(); ?>
-          </span>
-    <?php } elseif ( WC()->cart->get_cart_contents_count() == 0 ) { ?>
-    <div class="separator"></div>
-    <svg class="header-cart__icon">
-      <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#cart"></use>
-    </svg>
-    <span class="header-cart__count">
-          <?php // echo WC()->cart->get_cart_contents_count(); ?>
-          0
-          </span>
-    <?php } ?>
-	</div>
+  <div class="header-cart__btn <?php if (WC()->cart->get_cart_contents_count() == 0) : echo "is-empty"; endif; ?>">
+    <span class="header-cart__text">Корзина</span>
+    <div class="wrap">
+      <div class="separator"></div>
+      <svg class="header-cart__icon">
+        <use xlink:href="<?= get_template_directory_uri(); ?>/assets/img/icons-sprite.svg#cart"></use>
+      </svg>
+      <span class="header-cart__count">
+        <?php echo WC()->cart->get_cart_contents_count(); ?>
+      </span>
+    </div>
+  </div>
 
 	<?php
-	$fragments['.wrap'] = ob_get_clean();
+	$fragments['.header-cart__btn'] = ob_get_clean();
 
 	return $fragments;
 }
