@@ -52,15 +52,6 @@ jQuery(document).ready(function($) {
         ],
     });
 
-    $('.cart-crossell__slide-wrapper').slick({
-        infinite: false,
-        slidesToShow: 3,
-        // slidesToScroll: 1,
-        prevArrow: $('.cart .slider-btn.prev'),
-        nextArrow: $('.cart .slider-btn.next'),
-        variableWidth: true,
-    })
-
   // setup product card counter
   $('.food-card__counter-btn').on('click', function () {
       const price = $(this).closest('.food-card').find('span.price');
@@ -130,6 +121,18 @@ jQuery(document).ready(function($) {
           .closest('.contacts')
           .find('.worktime')
           .text(time)
+  })
+
+  $('a.shipping-zone').on('click', function(e) {
+    e.preventDefault();
+    const shippingZone = $(this)
+      .closest('.contacts')
+      .find('input[type="radio"][name="location"]:checked')
+      .data('zone')
+    $(this)
+      .closest('.contacts')
+      .find('iframe')
+      .prop('src', shippingZone)
   })
 
   // setup scroll to category
