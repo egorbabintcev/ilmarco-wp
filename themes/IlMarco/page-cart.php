@@ -103,6 +103,6 @@ get_header( 'cart' );
 
 <?php
 
-get_footer();
+get_footer('cart');
 
 ?>

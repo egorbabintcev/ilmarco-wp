@@ -33,7 +33,7 @@
 
 <header class="header header_column-direction">
     <div class="container">
-        <a class="header-logo" href="/">
+        <a class="header-logo">
             <img class="header-logo__img" src="<?= get_template_directory_uri(); ?>/assets/img/company-logo.png" alt="" />
         </a>
         <div class="header-steps">

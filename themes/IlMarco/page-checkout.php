@@ -31,6 +31,6 @@ get_header( 'checkout' );
 
 <?php
 
-get_footer();
+get_footer('cart');
 
 ?>
