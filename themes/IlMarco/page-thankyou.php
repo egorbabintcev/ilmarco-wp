@@ -11,8 +11,7 @@ get_header( 'thankyou' );
     <section class="cart">
         <div class="container">
             <div class="cart-steps">
-                <div class="cart-step is-active">
-                    <div>
+                <div class="cart-step is-active cart-step_center-all">
 	                    <?php
 	                    while ( have_posts() ) :
 		                    the_post();
@@ -29,10 +28,9 @@ get_header( 'thankyou' );
 	                    endwhile; // End of the loop.
 	                    ?>
 
-                        <div class="cart-btns">
-                            <a href="/" class="cart-btns__btn cart-btns__btn_stroke">Вернуться на главную</a>
-                        </div>
-                    </div>
+                      <div class="cart-btns">
+                          <a href="/" class="cart-btns__btn cart-btns__btn_stroke">Вернуться на главную</a>
+                      </div>
                 </div>
             </div>
         </div>
