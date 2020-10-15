@@ -479,8 +479,8 @@
       @include media('>sm') {
         flex-direction: column;
         margin: 0 rem(30);
-        max-height: rem(600);
-        min-height: rem(600);
+        max-height: rem(640);
+        min-height: rem(640);
         padding-bottom: rem(35);
         text-align: center;
 
@@ -544,7 +544,7 @@
       &__img {
         border-radius: rem(10);
         margin-bottom: rem(30);
-        max-height: rem(225);
+        max-height: rem(265);
         object-fit: cover;
         object-position: center;
         transition: width 0.3s;

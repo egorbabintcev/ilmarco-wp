@@ -44,9 +44,9 @@ table.shop_table_responsive tr td:not(.product-thumbnail)::before {
 
 img.attachment-woocommerce_thumbnail {
   margin-right: 20px;
-  max-height: 80px;
+  max-height: 110px;
   max-width: 110px;
-  min-height: 80px;
+  min-height: 110px;
   min-width: 110px;
   object-fit: cover;
   object-position: bottom;
@@ -56,17 +56,8 @@ img.attachment-woocommerce_thumbnail {
     position: fixed;
     right: -100%;
     top: 0;
-    width: 600px;
+    width: 700px;
     height: 100%;
-    /*-webkit-transform: translate(100%, 0);*/
-    /*-moz-transform: translate(100%, 0);*/
-    /*-ms-transform: translate(100%, 0);*/
-    /*transform: translate(100%, 0);*/
-    /*-webkit-transition: transform 0.4s ease;*/
-    /*-moz-transition: transform 0.4s ease;*/
-    /*-o-transition: transform 0.4s ease;*/
-    /*transition: transform 0.4s ease;*/
-
     transition: all .8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
     z-index: 11; }
@@ -83,8 +74,8 @@ img.attachment-woocommerce_thumbnail {
 
 .modal-minicart .minicart-content-wrap {
     background-color: var(--color-dark-blue);
-    max-width: 600px;
-    padding: 100px 50px 50px;
+    max-width: 700px;
+    padding: 100px 30px 30px;
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -140,7 +131,6 @@ img.attachment-woocommerce_thumbnail {
         margin-right: -10px; } }
 .minicart-product-list .single-product-item {
     position: relative;
-    margin-bottom: 30px;
     padding-right: 25px; }
 .minicart-product-list .single-product-item:last-child {
     margin-bottom: 0; }
